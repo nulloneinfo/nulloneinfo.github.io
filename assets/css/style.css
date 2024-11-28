@@ -33,7 +33,7 @@ body {
 }
 
 section {
-    padding: 100px 0px;
+    padding: 80px 0px;
 }
 
 a {
@@ -453,6 +453,76 @@ h1 span {
 
 /* About Section End */
 
+/* Why Choose Me Section Start */
+.d2c_choose_me_wrapper {
+    background-color: #1B1E2F; /* Dark background */
+    color: var(--primary_color); /* Light text for readability */
+    padding: 50px 0; /* Add spacing for the section */
+}
+
+.d2c_choose_me_wrapper h4 {
+    color: var(--secondary_color); /* Highlighted header color */
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.d2c_choose_me_wrapper h6 {
+    color: var(--secondary_color); /* Accent color for smaller headings */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.d2c_choose_me_wrapper p {
+    color: var(--text_color); /* Subtle text color */
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.d2c_choose_me_wrapper img {
+    border-radius: 296.5px 0px 0px 0px; /* Rounded top-left corner */
+    max-width: 100%;
+    height: auto;
+}
+
+.d2c_choose_me_wrapper .d2c_img_overlay {
+    border-radius: 296.5px 0px 0px 0px;
+    background: linear-gradient(180deg, rgba(14, 18, 27, 0.00) 0%, #0E121B 100%),
+        radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.21) 16.19%, rgba(13, 17, 26, 0.00) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+.d2c_choose_me_wrapper .d2c_icon {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    color: var(--text_color); /* Icon color */
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.05) 100%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.d2c_choose_me_wrapper ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.d2c_choose_me_wrapper li {
+    margin: 7px 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Why Choose Me Section End */
+
+
+
 /* Service Section Start */
 .d2c_card {
     padding: 1px 1px 0px 1px;
@@ -532,42 +602,6 @@ h1 span {
 
 /* Counter Section End */
 
-/* Why Choose Me Section Start */
-.d2c_choose_me_wrapper h4 {
-    color: var(--secondary_color);
-    font-size: 27px;
-    font-weight: 700;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-}
-
-.d2c_choose_me_wrapper .d2c_icon {
-    width: 42px;
-    height: 42px;
-    font-size: 16px;
-    color: var(--text_color);
-}
-
-.d2c_choose_me_wrapper h6 {
-    color: var(--secondary_color);
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.d2c_choose_me_wrapper img {
-    border-radius: 296.5px 0px 0px 0px;
-}
-
-.d2c_choose_me_wrapper .d2c_img_overlay {
-    border-radius: 296.5px 0px 0px 0px;
-}
-
-.d2c_choose_me_wrapper li {
-    margin: 7px 0px;
-}
-
-/* Why Choose Me Section End */
-
 /* Call To Action Start */
 .d2c_c2a_card {
     padding: 70px 80px;
@@ -587,6 +621,141 @@ h1 span {
 }
 
 /* Call To Action End */
+
+/* Certifiacation Start */
+/* Certifications & Trainings Section Styles */
+.d2c_certifications_wrapper {
+    padding: 80px 20px;
+    background: #1B1E2F;
+    color: #ffffff;
+  }
+  
+  .d2c_certifications_heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--secondary_color); /* Highlight color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .d2c_certifications_heading p {
+    font-size: 18px;
+    color: #d1d1d1;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .d2c_cert_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .d2c_cert_card {
+    position: relative;
+    background: #202437; /* Gradient background */
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    height: 200px; /* Fixed size for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .d2c_cert_card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+  }
+  
+  .d2c_cert_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    border-color: #f9a825; /* Highlight border on hover */
+  }
+  
+  .d2c_cert_card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .d2c_cert_card a {
+    color: #f9a825;
+    text-decoration: underline;
+    font-size: 16px;
+    z-index: 2;
+  }
+  
+  .d2c_cert_card:nth-child(1)::before {
+    background-image: url('icons/ceh.png'); /* Replace with your icon path */
+  }
+  
+  .d2c_cert_card:nth-child(2)::before {
+    background-image: url('icons/cissp.png');
+  }
+  
+  .d2c_cert_card:nth-child(3)::before {
+    background-image: url('icons/appsec.png');
+  }
+  
+  .d2c_cert_card:nth-child(4)::before {
+    background-image: url('icons/cybrary.png');
+  }
+  
+  .d2c_cert_card:nth-child(5)::before {
+    background-image: url('icons/project_management.png');
+  }
+  
+  .d2c_cert_card:nth-child(6)::before {
+    background-image: url('icons/nse1.png');
+  }
+  
+  .d2c_cert_card:nth-child(7)::before {
+    background-image: url('icons/security_plus.png');
+  }
+  
+  .d2c_cert_card:nth-child(8)::before {
+    background-image: url('icons/aws_cloud.png');
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .d2c_cert_grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .d2c_cert_grid {
+      grid-template-columns: 1fr; /* Single column for small screens */
+    }
+  
+    .d2c_cert_card {
+      height: auto;
+    }
+  }
+  
+  
+/* Certification section end */
 
 /* Project Section Start */
 .d2c_project_wrapper h2 {
@@ -832,6 +1001,7 @@ h1 span {
 /* Contact Section End */
 
 /* Footer Section Start */
+/* Footer Section Start */
 .d2c_footer_wrapper {
     background: url(../images/group.png), url(../images/footer_bg.jpg), var(--primary_bg);
     background-repeat: no-repeat;
@@ -840,6 +1010,7 @@ h1 span {
     border-top: 1px solid #34396679;
 }
 
+/* Footer Card */
 .d2c_footer_card {
     height: 100%;
     padding: 30px;
@@ -857,48 +1028,6 @@ h1 span {
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 42px;
-}
-
-.d2c_footer_card ul {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
-    /* Ensures space between the links */
-    flex-wrap: wrap;
-    /* Allows wrapping of items if necessary */
-    gap: 20px;
-    /* Adds space between icons */
-}
-
-.d2c_footer_card ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Adjusted for better icon sizing */
-    height: 50px; /* Adjusted for better icon sizing */
-    background-color: #333; /* Icon background */
-    color: #fff; /* Icon color */
-    border-radius: 50%; /* Circular icons */
-    text-align: center;
-    font-size: 14px; /* Adjust font size to fit inside the circle */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 10px; /* Ensures padding is consistent for better alignment */
-    text-decoration: none; /* Remove underline */
-}
-
-.d2c_footer_card ul li a:hover {
-    background-color: #007bff; /* Hover background */
-    color: #fff; /* Icon stays white on hover */
-}
-
-
-
-.d2c_footer_wrapper .btn:hover {
-    background: var(--secondary_color);
-    color: var(--text_color);
-    border: 1px solid var(--secondary_color);
-    transition: 0.4s all;
 }
 
 .d2c_footer_card .row {
@@ -922,10 +1051,84 @@ h1 span {
     }
 }
 
+/* Specific Styling for Useful Links */
+.d2c_footer_wrapper .col-md-6.d2c_useful_links h3 {
+    color: #fff; /* White title for Useful Links */
+    font-size: 26px; /* Larger size for emphasis */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.d2c_footer_wrapper .col-md-6.d2c_useful_links ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.d2c_footer_wrapper .col-md-6.d2c_useful_links ul li {
+    font-size: 16px;
+    color: #ccc; /* Light grey text */
+}
+
+.d2c_footer_wrapper .col-md-6.d2c_useful_links ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.d2c_footer_wrapper .col-md-6.d2c_useful_links ul li a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Styling for Connect with Me (no change) */
+.d2c_footer_wrapper .col-md-12.d2c_connect_with_me h3 {
+    color: var(--secondary_color);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 42px;
+}
+
+.d2c_footer_wrapper .col-md-12.d2c_connect_with_me ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Ensures space between the links */
+    flex-wrap: wrap;
+    /* Allows wrapping of items if necessary */
+    gap: 20px;
+    /* Adds space between icons */
+}
+
+.d2c_footer_wrapper .col-md-12.d2c_connect_with_me ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjusted for better icon sizing */
+    height: 50px; /* Adjusted for better icon sizing */
+    background-color: #333; /* Icon background */
+    color: #fff; /* Icon color */
+    border-radius: 50%; /* Circular icons */
+    text-align: center;
+    font-size: 14px; /* Adjust font size to fit inside the circle */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px; /* Ensures padding is consistent for better alignment */
+    text-decoration: none; /* Remove underline */
+}
+
+.d2c_footer_wrapper .col-md-12.d2c_connect_with_me ul li a:hover {
+    background-color: #007bff; /* Hover background */
+    color: #fff; /* Icon stays white on hover */
+}
+
 /* Remove newsletter section */
 .input-group {
     display: none;
 }
+
 
 /* Footer Section End */
 
@@ -1023,6 +1226,96 @@ h1 span {
 
 /* Scroll Button End */
 
+/* Article content */
+/* .d2c_articles_section {
+    background-color: #101323; /* Replace with the desired background color */
+    /*padding: 40px 0; /* Optional: Add some padding for better spacing */
+/*} */
+/* Articles Section Styles */
+/* Articles Section Styles */
+.d2c_articles_section {
+    padding: 40px 0;
+    background-color: #1F2235; /* Dark background similar to the certifications section */
+    color: #ffffff; /* Light text for contrast */
+  }
+  
+  .d2c_articles_heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f1ebeb; /* Light text color */
+    margin-bottom: 20px;
+  }
+  
+  .d2c_articles_heading p {
+    font-size: 18px;
+    color: #cccccc; /* Lighter grey for description */
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .d2c_article_card {
+    background-color: #2C2F47; /* Slightly lighter dark background for cards */
+    border: 1px solid #444; /* Slightly darker border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .d2c_article_card h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f1ebeb; /* Light text for article titles */
+    margin-top: 15px;
+  }
+  
+  .d2c_article_card p {
+    font-size: 16px;
+    color: #dddddd; /* Lighter grey for article descriptions */
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  
+  .d2c_article_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .d2c_article_card .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .d2c_article_card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adjust for larger screens */
+  @media (min-width: 768px) {
+    .d2c_article_card {
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+  
+  
+  /* Adjust for larger screens */
+  @media (min-width: 768px) {
+    .d2c_article_card {
+      margin: 0 auto;
+      max-width: 350px;
+    }
+  }
+  
 
 /* 
     Template Name: {{CSUME V3 - Cyber Security Expert One Page Website Template}}
