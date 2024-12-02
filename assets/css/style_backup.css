@@ -529,152 +529,6 @@ h1 span {
 
 /* Why Choose Me Section End */
 
-/* Certifiacation Start */
-/* Certifications & Trainings Section Styles */
-.d2c_certifications_wrapper {
-    padding: 80px 20px;
-    background: #151724;
-    color: #ffffff;
-}
-
-.d2c_certifications_heading h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--secondary_color);
-    /* Highlight color */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.d2c_certifications_heading p {
-    font-size: 18px;
-    color: #d1d1d1;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.d2c_cert_grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 columns */
-    gap: 20px;
-    justify-content: center;
-}
-
-.d2c_cert_card {
-    position: relative;
-    background: #202437;
-    /* Gradient background */
-    border: 2px solid transparent;
-    border-radius: 15px;
-    padding: 20px;
-    height: 200px;
-    /* Fixed size for uniformity */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    overflow: hidden;
-}
-
-.d2c_cert_card::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.1;
-    z-index: 1;
-}
-
-.d2c_cert_card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-    border-color: #f9a825;
-    /* Highlight border on hover */
-}
-
-.d2c_cert_card h5 {
-    font-size: 20px;
-    font-weight: bold;
-    z-index: 2;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.d2c_cert_card a {
-    color: #f9a825;
-    text-decoration: underline;
-    font-size: 16px;
-    z-index: 2;
-}
-
-.d2c_cert_card:nth-child(1)::before {
-    background-image: url('../images/CEh.png');
-    /* Replace with your icon path */
-}
-
-.d2c_cert_card:nth-child(2)::before {
-    background-image: url('icons/cissp.png');
-}
-
-.d2c_cert_card:nth-child(3)::before {
-    background-image: url('icons/appsec.png');
-}
-
-.d2c_cert_card:nth-child(4)::before {
-    background-image: url('icons/cybrary.png');
-}
-
-.d2c_cert_card:nth-child(5)::before {
-    background-image: url('icons/project_management.png');
-}
-
-.d2c_cert_card:nth-child(6)::before {
-    background-image: url('icons/nse1.png');
-}
-
-.d2c_cert_card:nth-child(7)::before {
-    background-image: url('icons/security_plus.png');
-}
-
-.d2c_cert_card:nth-child(8)::before {
-    background-image: url('icons/aws_cloud.png');
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .d2c_cert_grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columns for medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .d2c_cert_grid {
-        grid-template-columns: 1fr;
-        /* Single column for small screens */
-    }
-
-    .d2c_cert_card {
-        height: auto;
-    }
-}
-
-
-/* Certification section end */
-
-
-
-
 
 
 /* Service Section Start */
@@ -865,7 +719,7 @@ h1 span {
 }
 
 .d2c_cert_card:nth-child(1)::before {
-    background-image: url('../images/CEh.png');
+    background-image: url('icons/ceh.png');
     /* Replace with your icon path */
 }
 
@@ -1501,6 +1355,7 @@ h1 span {
     }
 }
 
+
 /* 
     Template Name: {{CSUME V3 - Cyber Security Expert One Page Website Template}}
     Template URL: {{https://designtocodes.com/product/csume-v3-cyber-security-expert-one-page-template}}
@@ -1509,3 +1364,17 @@ h1 span {
     Author URL: https://www.designtocodes.com
     Text Domain: {{ CSUME V3 }}
  */
+/* Unified Theme Background */
+.d2c_services_wrapper,
+.d2c_counter_choose_bg,
+.d2c_choose_me_wrapper,
+.d2c_certifications_wrapper,
+.d2c_project_wrapper,
+.d2c_partner_wrapper,
+.d2c_testimonial_wrapper {
+    background-color: #151724 !important;
+    background-image: none !important;
+    /* Remove any background images */
+    color: #ffffff;
+    /* Ensure text is readable on dark background */
+}
