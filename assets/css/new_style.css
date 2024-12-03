@@ -12,7 +12,6 @@
     /* Text Color */
     --text_color: #C0C6D6;
     /* BG */
-    --primary_bg: #0D111A;
 }
 
 /* selection */
@@ -182,7 +181,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--default_color);
+    background: var(--default_color);
     z-index: 9999;
     transition: opacity 0.5s ease;
     opacity: 1;
@@ -281,7 +280,7 @@ body .d2c_mobile_view {
     top: 0;
     transition: 0.5s;
     padding: 20px 15px;
-    background-color: #1B2130;
+    background: #1B2130;
     overflow: scroll;
     z-index: 9999;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
@@ -301,7 +300,7 @@ body .d2c_mobile_view {
     top: 0;
     transition: 0.5s !important;
     padding: 20px 15px;
-    background-color: #021616;
+    background: #021616;
     overflow: scroll;
     z-index: 9999;
 }
@@ -374,7 +373,6 @@ body .d2c_mobile_view {
     background: url(../images/partner_testimonial_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 .d2c_contact_wrapper {
@@ -456,7 +454,7 @@ h1 span {
 
 /* Why Choose Me Section Start */
 .d2c_choose_me_wrapper {
-    background-color: #141825;
+    background: #141825;
     /* Dark background */
     color: var(--primary_color);
     /* Light text for readability */
@@ -533,12 +531,15 @@ h1 span {
 /* Certifiacation Start */
 
 .d2c_certifications_wrapper {
-    background: url(../images/counter_choose_bg.jpg);
+    background: url(../images/services_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: var(--primary_color);
 }
+
+
+
 
 .d2c_certifications_heading h2 {
     /* font-size: 36px; */
@@ -552,7 +553,7 @@ h1 span {
 
 .d2c_certifications_heading p {
     font-size: 18px;
-    color: #d1d1d1;
+    color: var(--text_color);
     margin-bottom: 50px;
     text-align: center;
 }
@@ -567,7 +568,7 @@ h1 span {
 
 .d2c_cert_card {
     position: relative;
-    background: #202437;
+    background: var(--primary_bg);
     /* Gradient background */
     border: 2px solid transparent;
     border-radius: 15px;
@@ -609,7 +610,7 @@ h1 span {
     font-size: 20px;
     font-weight: bold;
     z-index: 2;
-    color: #ffffff;
+    color: var(--primary_color);
     margin-bottom: 10px;
 }
 
@@ -704,7 +705,7 @@ h1 span {
 }
 
 .d2c_article_card {
-    background-color: #2C2F47;
+    background: #2C2F47;
     /* Slightly lighter dark background for cards */
     border: 1px solid #444;
     /* Slightly darker border */
@@ -740,7 +741,7 @@ h1 span {
 .d2c_article_card .btn {
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -748,7 +749,7 @@ h1 span {
 }
 
 .d2c_article_card .btn:hover {
-    background-color: #0056b3;
+    background: #0056b3;
 }
 
 /* Adjust for larger screens */
@@ -773,27 +774,27 @@ h1 span {
 /* Service Section Start */
 .d2c_card {
     padding: 1px 1px 0px 1px;
-    background: linear-gradient(180deg, rgba(94, 106, 210, 0.5) 0%, rgba(19, 23, 34, 0) 90%);
+    background: var(--primary_bg);
 }
 
 .d2c_card_child {
     padding: 10px;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    background: var(--primary_bg);
 }
 
 .d2c_card_child_two {
     padding: 0px 1px 1px 1px;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    background: var(--primary_bg);
     transition: 0.4s all;
 }
 
 .d2c_card_child_three {
     padding: 25px;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    background: var(--primary_bg);
 }
 
 .d2c_card:hover .d2c_card_child_two {
-    background: linear-gradient(0deg, rgba(94, 106, 210, 0.3) 0%, rgba(27, 31, 47, 1) 30%);
+    background: var(--primary_bg);
     transition: 0.4s all;
 }
 
@@ -802,7 +803,7 @@ h1 span {
     height: 75px;
     padding: 0px 1px 1px 1px;
     border-radius: 100px;
-    background: linear-gradient(180deg, rgba(32, 35, 55, 1) 0%, rgba(57, 59, 96, 1) 100%);
+    background: var(--primary_bg);
     margin: 0 auto 30px;
 }
 
@@ -812,7 +813,7 @@ h1 span {
     font-size: 30px;
     color: var(--secondary_color);
     border-radius: 100px;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.5) 100%);
+    background: var(--primary_bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -826,7 +827,7 @@ h1 span {
 
 /* Counter Section Start */
 .d2c_border_bg {
-    background: linear-gradient(180deg, rgba(87, 98, 193, 0.5) 0%, rgba(50, 57, 106, 0.5) 100%);
+    background: var(--primary_bg);
     padding: 1px;
 }
 
@@ -891,7 +892,7 @@ h1 span {
 .d2c_project_wrapper .d2c_overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(0deg, rgba(13, 17, 26, 0.80) 0%, rgba(13, 17, 26, 0.80) 100%);
+    background: var(--primary_bg);
     opacity: 1;
     transition: 0.4s all;
 }
@@ -1038,7 +1039,7 @@ h1 span {
     border-radius: 100px;
     color: var(--primary_color);
     border: 1px solid #2e3358;
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.05) 100%);
+    background: var(--primary_bg);
     box-shadow: 0px 5px 20px 5px rgba(94, 106, 210, 0.22);
     display: inline-flex !important;
     justify-content: center;
@@ -1051,7 +1052,12 @@ h1 span {
 /* Contact Section Styling */
 .d2c_contact_wrapper {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background: url(../images/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary_color);
+    /* Ensure text is readable */
 }
 
 .section-title {
@@ -1069,7 +1075,7 @@ h1 span {
 }
 
 .contact-box {
-    background-color: #151724;
+    background: var(--primary_bg);
     border: 1px solid #ddd;
     padding: 15px;
     text-align: center;
@@ -1099,7 +1105,7 @@ h1 span {
 .contact-box p {
     font-size: 0.8rem;
     margin-top: 8px;
-    color: #888;
+    color: var(--text_color);
 }
 
 .contact-box:hover i {
@@ -1125,11 +1131,12 @@ h1 span {
 /* Contact Section End */
 
 /* Footer Section Start */
-/* Footer Section Start */
+
 .d2c_footer_wrapper {
-    background: url(../images/group.png), url(../images/footer_bg.jpg), var(--primary_bg);
+    background: url(../images/footer_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 100px 0px;
     border-top: 1px solid #34396679;
 }
@@ -1139,7 +1146,7 @@ h1 span {
     height: 100%;
     padding: 30px;
     border: 1px solid rgba(94, 106, 210, 0.20);
-    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.17) 0%, rgba(13, 17, 26, 0) 100%), #131722;
+    background: var(--primary_bg);
 }
 
 .d2c_footer_card img {
@@ -1195,7 +1202,7 @@ h1 span {
 
 .d2c_footer_wrapper .col-md-6.d2c_useful_links ul li {
     font-size: 16px;
-    color: #ccc;
+    color: var(--text_color);
     /* Light grey text */
 }
 
@@ -1240,7 +1247,7 @@ h1 span {
     /* Adjusted for better icon sizing */
     height: 50px;
     /* Adjusted for better icon sizing */
-    background-color: #333;
+    background: var(--primary_bg);
     /* Icon background */
     color: #fff;
     /* Icon color */
@@ -1257,7 +1264,7 @@ h1 span {
 }
 
 .d2c_footer_wrapper .col-md-12.d2c_connect_with_me ul li a:hover {
-    background-color: #007bff;
+    background: var(--primary_bg);
     /* Hover background */
     color: #fff;
     /* Icon stays white on hover */
@@ -1339,7 +1346,7 @@ h1 span {
 }
 
 #scrollBtn a i {
-    background: var(--secondary_color);
+    background: var(--primary_bg);
     font-size: 20px;
     color: var(--default_color);
     border-radius: 4px;
@@ -1358,13 +1365,12 @@ h1 span {
 
 #scrollBtn a i:hover {
     color: var(--default_color);
-    background: var(--accent_color);
+    background: var(--primary_bg);
     border: 2px solid var(--accent_color);
     transition: all ease 0.4s;
 }
 
 /* Scroll Button End */
-
 
 
 

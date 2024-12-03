@@ -341,21 +341,24 @@ body .d2c_mobile_view {
 
 /* Section Background Start */
 .d2c_hero_wrapper {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/hero_bg.jpg);
+    background: var(--primary_bg), url(../images/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .d2c_about_wrapper {
-    background: url(../images/about_bg.jpg);
+    background: var(--primary_bg), url(../images/about_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .d2c_services_wrapper {
-    background: url(../images/services_bg.jpg);
+    background: var(--primary_bg), url(../images/services_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .d2c_counter_choose_bg {
@@ -374,7 +377,6 @@ body .d2c_mobile_view {
     background: url(../images/partner_testimonial_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 .d2c_contact_wrapper {
@@ -533,11 +535,9 @@ h1 span {
 /* Certifiacation Start */
 
 .d2c_certifications_wrapper {
-    background: url(../images/counter_choose_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: var(--primary_color);
+    padding: 80px 20px;
+    background: #151724;
+    color: #ffffff;
 }
 
 .d2c_certifications_heading h2 {
@@ -676,97 +676,7 @@ h1 span {
 /* Certification section end */
 
 
-/* Articles Section Styles */
-.d2c_articles_section {
-    background: url(../images/services_bg.jpg);
-    /* Adjust path if needed */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: var(--primary_color);
-}
 
-
-.d2c_articles_heading h2 {
-    /* font-size: 36px; */
-    /* font-weight: 700; */
-    /* color: #f1ebeb; */
-    /* Light text color */
-    /* margin-bottom: 20px; */
-}
-
-.d2c_articles_heading p {
-    color: var(--text_color);
-    /* Highlight color */
-    margin-bottom: 20px;
-    /* text-transform: uppercase; */
-    text-align: center;
-}
-
-.d2c_article_card {
-    background-color: #2C2F47;
-    /* Slightly lighter dark background for cards */
-    border: 1px solid #444;
-    /* Slightly darker border */
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.d2c_article_card h5 {
-    font-size: 22px;
-    font-weight: 600;
-    color: #f1ebeb;
-    /* Light text for article titles */
-    margin-top: 15px;
-}
-
-.d2c_article_card p {
-    font-size: 16px;
-    color: #dddddd;
-    /* Lighter grey for article descriptions */
-    line-height: 1.5;
-    margin-top: 15px;
-}
-
-.d2c_article_card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.d2c_article_card .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.d2c_article_card .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Adjust for larger screens */
-@media (min-width: 768px) {
-    .d2c_article_card {
-        margin: 0 auto;
-        max-width: 350px;
-    }
-}
-
-
-/* Adjust for larger screens */
-@media (min-width: 768px) {
-    .d2c_article_card {
-        margin: 0 auto;
-        max-width: 350px;
-    }
-}
 
 
 
@@ -1127,9 +1037,10 @@ h1 span {
 /* Footer Section Start */
 /* Footer Section Start */
 .d2c_footer_wrapper {
-    background: url(../images/group.png), url(../images/footer_bg.jpg), var(--primary_bg);
+    background: var(--primary_bg), url(../images/footer_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 100px 0px;
     border-top: 1px solid #34396679;
 }
@@ -1366,7 +1277,95 @@ h1 span {
 /* Scroll Button End */
 
 
+/* Articles Section Styles */
+.d2c_articles_section {
+    padding: 40px 0;
+    background-color: #151724;
+    /* Dark background similar to the certifications section */
+    color: #ffffff;
+    /* Light text for contrast */
+}
 
+.d2c_articles_heading h2 {
+    /* font-size: 36px; */
+    /* font-weight: 700; */
+    /* color: #f1ebeb; */
+    /* Light text color */
+    /* margin-bottom: 20px; */
+}
+
+.d2c_articles_heading p {
+    color: var(--text_color);
+    /* Highlight color */
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    text-align: center;
+}
+
+.d2c_article_card {
+    background-color: #2C2F47;
+    /* Slightly lighter dark background for cards */
+    border: 1px solid #444;
+    /* Slightly darker border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.d2c_article_card h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f1ebeb;
+    /* Light text for article titles */
+    margin-top: 15px;
+}
+
+.d2c_article_card p {
+    font-size: 16px;
+    color: #dddddd;
+    /* Lighter grey for article descriptions */
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.d2c_article_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.d2c_article_card .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.d2c_article_card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+    .d2c_article_card {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+    .d2c_article_card {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
 
 /* 
     Template Name: {{CSUME V3 - Cyber Security Expert One Page Website Template}}
