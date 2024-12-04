@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nulloneinfo.github.io/sitemap.xml
