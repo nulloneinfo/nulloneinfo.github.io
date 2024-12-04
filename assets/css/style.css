@@ -687,13 +687,7 @@ h1 span {
 }
 
 
-.d2c_articles_heading h2 {
-    /* font-size: 36px; */
-    /* font-weight: 700; */
-    /* color: #f1ebeb; */
-    /* Light text color */
-    /* margin-bottom: 20px; */
-}
+
 
 .d2c_articles_heading p {
     color: var(--text_color);
