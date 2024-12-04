@@ -341,13 +341,13 @@ body .d2c_mobile_view {
 
 /* Section Background Start */
 .d2c_hero_wrapper {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/hero_bg.jpg);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 85%, rgba(13, 18, 26, 1) 95%), url(../images/hero_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .d2c_about_wrapper {
-    background: url(../images/about_bg.jpg);
+    background: url(../images/about_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -831,7 +831,7 @@ h1 span {
 }
 
 .d2c_count_wrapper {
-    background-image: url(../images/d2c_box_bg.png);
+    background-image: url(../images/d2c_box_bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -852,7 +852,7 @@ h1 span {
 /* Call To Action Start */
 .d2c_c2a_card {
     padding: 70px 80px;
-    background-image: url(../images/d2c_box_bg.png);
+    background-image: url(../images/d2c_box_bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -967,7 +967,7 @@ h1 span {
 
 /* Partner Section Start */
 .d2c_partner_box {
-    background-image: url(../images/d2c_box_bg.png);
+    background-image: url(../images/d2c_box_bg.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1127,7 +1127,7 @@ h1 span {
 /* Footer Section Start */
 /* Footer Section Start */
 .d2c_footer_wrapper {
-    background: url(../images/group.png), url(../images/footer_bg.jpg), var(--primary_bg);
+    background: url(../images/group.png), url(../images/footer_bg.webp), var(--primary_bg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0px;
