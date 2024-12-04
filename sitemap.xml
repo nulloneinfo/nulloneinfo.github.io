@@ -9,6 +9,11 @@
   
   <!-- Add pages within your portfolio -->
   <url>
+    <loc>https://nulloneinfo.github.io/blog</loc>
+    <lastmod>2024-12-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://nulloneinfo.github.io/#about</loc>
     <lastmod>2024-12-04</lastmod>
     <priority>0.8</priority>
@@ -18,69 +23,11 @@
     <lastmod>2024-12-04</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://nulloneinfo.github.io/#blog</loc>
-    <lastmod>2024-12-04</lastmod>
-    <priority>0.8</priority>
-  </url>
+  
   <url>
     <loc>https://nulloneinfo.github.io/#contact</loc>
     <lastmod>2024-12-04</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/encode_exploits</loc>
-    <lastmod>2023-07-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/lab</loc>
-    <lastmod>2024-11-21</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/Nethunter-Bootanimation</loc>
-    <lastmod>2024-11-05</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/nullone.github.io</loc>
-    <lastmod>2024-12-04</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/nulloneinfo</loc>
-    <lastmod>2024-10-28</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/nulloneinfo.github.io</loc>
-    <lastmod>2024-12-04</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/OpenWrt-Wi-Fi-Attack-Tool</loc>
-    <lastmod>2024-11-05</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/portfolio</loc>
-    <lastmod>2024-12-03</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/remote-access-backdoor</loc>
-    <lastmod>2024-06-26</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/small-php-shell</loc>
-    <lastmod>2023-07-29</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://github.com/nulloneinfo/Web-Security-Academy</loc>
-    <lastmod>2023-07-23</lastmod>
-    <priority>0.7</priority>
-  </url>
+ 
 </urlset>
