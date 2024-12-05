@@ -928,7 +928,7 @@ h1 span {
 }
 
 .d2c_project_wrapper h3 {
-    color: var(--default_color);
+    color: var(--secondary_color);
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
